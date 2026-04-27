@@ -15,3 +15,5 @@ a, b = b, a
 print(a, b)              #a is now 15 and b is now 10
 
 print([m for m in dir(now) if not m.startswith('_')])  #prints all the attributes and methods of the variable 'now' that do not start with '_'
+print(type(now))         #prints the type of the variable 'now'
+print(dir(now))          #prints all the attributes and methods of the variable 'now' including those that start with '_'
