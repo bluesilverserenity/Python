@@ -21,3 +21,15 @@ def minutes_to_hours(minutes, seconds):
 
 result = minutes_to_hours(minutes, seconds)
 print(f"That is equal to {result: .2f} hours.") #the : .2f in the f-string formats the result to 2 decimal places
+
+def larger_number(num1, num2):
+    if num1 > num2:
+        return num1
+    elif num2 > num1:
+        return num2
+    else:
+        return "Both numbers are equal" 
+    
+number1, number2 = int(input("Enter the first number: ")), int(input("Enter the second number: "))
+result = larger_number(number1, number2)       
+print("The larger number is:", result)
